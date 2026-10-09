@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Education and skills of Bharti Chopra: NK Public School schooling, Civil Engineering at JECRC University, Vibe coding, AI generalist, Video and Photo editing.">
+  <title>Education & Skills | Bharti Chopra</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Bharti Chopra Portfolio Home">
+        <div class="brand-badge">BC</div>
+        <div>
+          <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          <span class="brand-text-sub">Civil Engineering • JECRC</span>
+        </div>
+      </a>
+
+      <!-- 4-Page Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home / About</a></li>
+          <li><a href="skills.html" class="nav-link active"><i class="fa-solid fa-graduation-cap"></i> Education & Skills</a></li>
+          <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects & Achievements</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <button class="quick-theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon"><i class="fa-solid fa-sun"></i></span>
+        </button>
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content: Education & Skills -->
+  <main id="main-content">
+
+    <!-- Page Header Banner -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header-badge">
+          <span class="badge badge-accent"><i class="fa-solid fa-book-open-reader"></i> Academic & Technical Profile</span>
+        </div>
+        <h1 class="page-title">Education & Skills</h1>
+        <p class="page-subtitle">
+          From schooling at NK Public School to pursuing Civil Engineering at JECRC University, paired with modern technical vibe coding, AI, and digital media proficiencies.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" style="padding-top: 1rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto 2rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem;">
+            <div>
+              <h2 style="font-size: 1.85rem; font-weight: 800;"><i class="fa-solid fa-user-graduate text-primary"></i> Academic Education</h2>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">Schooling foundation and university degree program</p>
+            </div>
+            <span class="badge"><i class="fa-solid fa-location-dot"></i> Jaipur, India</span>
+          </div>
+
+          <!-- Dynamic Education Timeline -->
+          <div class="education-timeline" id="education-timeline-container">
+            <!-- Populated via data.js and main.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="skills-container-box">
+          <div class="skills-management-bar">
+            <div>
+              <h2 style="font-size: 1.85rem; font-weight: 800;"><i class="fa-solid fa-sliders text-primary"></i> Core & Specialized Skills</h2>
+              <p style="color: var(--text-secondary); font-size: 0.92rem;">Filter by domain, add your own custom skills, or remove entries</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="skill-category-filters">
+              <button class="filter-btn active" data-category="All">All Skills</button>
+              <button class="filter-btn" data-category="Tech & AI">Tech & AI</button>
+              <button class="filter-btn" data-category="Creative Media">Creative Media</button>
+              <button class="filter-btn" data-category="Civil Engineering">Civil Engineering</button>
+              <button class="filter-btn" data-category="Core & Soft Skills">Core & Soft Skills</button>
+            </div>
+          </div>
+
+          <!-- Dynamic Skills Grid -->
+          <div class="skills-grid" id="skills-grid-container">
+            <!-- Populated via data.js & main.js -->
+          </div>
+
+          <!-- Interactive Add Skill Box (Easy addition of skills) -->
+          <div class="add-skill-box">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <div>
+                <h3 style="font-size: 1.1rem; font-weight: 700;"><i class="fa-solid fa-circle-plus text-primary"></i> Add a New Skill</h3>
+                <p style="font-size: 0.82rem; color: var(--text-secondary);">Expand your skillset dynamically in real-time</p>
+              </div>
+              <span class="badge badge-accent">Live In-Browser Storage</span>
+            </div>
+
+            <form id="add-skill-form" class="add-skill-form">
+              <input type="text" id="new-skill-name" class="form-input" placeholder="e.g. AutoCAD, Python, Drone Surveying..." required>
+              <select id="new-skill-category" class="form-select">
+                <option value="Tech & AI">Tech & AI</option>
+                <option value="Creative Media">Creative Media</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Core & Soft Skills">Core & Soft Skills</option>
+              </select>
+              <div style="display: flex; align-items: center; gap: 0.5rem; background: var(--bg-card); padding: 0.4rem 0.8rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                <label for="new-skill-level" style="font-size: 0.8rem; color: var(--text-secondary);">Level:</label>
+                <input type="range" id="new-skill-level" min="50" max="100" value="85" style="cursor: pointer; accent-color: var(--primary);">
+              </div>
+              <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-plus"></i> Add Skill
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Next Page Navigation CTA -->
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="projects.html" class="btn btn-primary" style="margin-right: 0.75rem;">
+            <span>Next: Projects & Achievements</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="index.html" class="btn btn-outline">
+            <i class="fa-solid fa-arrow-left"></i> <span>Back to Home</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-badge">BC</div>
+            <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          </div>
+          <p>Schooling from NK Public School, currently pursuing Civil Engineering from JECRC University, Jaipur.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Portfolio Navigation</h5>
+          <ul class="footer-nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home / About</a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-angle-right"></i> Education & Skills</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Projects & Achievements</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Details</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Contact & Social</h5>
+          <ul class="footer-nav-links">
+            <li><a href="mailto:bhartichopra@example.com" data-bind-href="profile.email"><i class="fa-solid fa-envelope"></i> bhartichopra@example.com</a></li>
+            <li><a href="tel:+91-XXXXXXXXXX" data-bind-href="profile.phone"><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</a></li>
+            <li><a href="https://linkedin.com/in/bhartichopra" target="_blank" rel="noopener noreferrer" data-bind-href="profile.linkedin"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/bhartichopra</a></li>
+            <li><span style="color: var(--text-muted);"><i class="fa-solid fa-map-pin"></i> Jaipur, Rajasthan</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bharti Chopra. All rights reserved.</div>
+        <div>Designed with clean responsive code • Fully customizable theme</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

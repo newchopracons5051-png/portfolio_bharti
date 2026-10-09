@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects and Achievements by Bharti Chopra: Smart Drainage System Design, Bridge Load Analysis, AI-based Construction Cost Estimator, JECRC Civil Tech Fest 1st Prize, and published papers.">
+  <title>Projects & Achievements | Bharti Chopra</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Bharti Chopra Portfolio Home">
+        <div class="brand-badge">BC</div>
+        <div>
+          <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          <span class="brand-text-sub">Civil Engineering • JECRC</span>
+        </div>
+      </a>
+
+      <!-- 4-Page Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home / About</a></li>
+          <li><a href="skills.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education & Skills</a></li>
+          <li><a href="projects.html" class="nav-link active"><i class="fa-solid fa-diagram-project"></i> Projects & Achievements</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <button class="quick-theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon"><i class="fa-solid fa-sun"></i></span>
+        </button>
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content: Projects & Achievements -->
+  <main id="main-content">
+
+    <!-- Page Header Banner -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header-badge">
+          <span class="badge badge-accent"><i class="fa-solid fa-award"></i> Portfolio Showcase</span>
+        </div>
+        <h1 class="page-title">Projects & Achievements</h1>
+        <p class="page-subtitle">
+          Applied civil engineering models, structural simulations, and AI prototypes created by Bharti Chopra, alongside competition awards and academic publications.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" style="padding-top: 1rem; padding-bottom: 2rem;">
+      <div class="container">
+        
+        <!-- Header Actions: Filters & Add Project Button -->
+        <div class="projects-header-actions">
+          <div>
+            <h2 style="font-size: 1.85rem; font-weight: 800;"><i class="fa-solid fa-diagram-project text-primary"></i> Featured Engineering Projects</h2>
+            <p style="color: var(--text-secondary); font-size: 0.92rem;">Editable project cards with simulation details and live modals</p>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+            <div class="skill-category-filters">
+              <button class="filter-btn project-filter-btn active" data-category="All">All</button>
+              <button class="filter-btn project-filter-btn" data-category="Civil Engineering">Drainage</button>
+              <button class="filter-btn project-filter-btn" data-category="Structural Design">Structures</button>
+              <button class="filter-btn project-filter-btn" data-category="AI & Tech">AI & Tech</button>
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="openAddProjectModal()">
+              <i class="fa-solid fa-plus"></i> Add Project
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projects-grid-container">
+          <!-- Populated dynamically via data.js and main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="container achievements-section">
+      <div class="achievements-header">
+        <div>
+          <h2 style="font-size: 1.85rem; font-weight: 800;"><i class="fa-solid fa-trophy text-primary"></i> Key Honors & Achievements</h2>
+          <p style="color: var(--text-secondary); font-size: 0.92rem;">Competitive tech fest recognitions, research publications, and leadership milestones</p>
+        </div>
+        <button class="btn btn-outline btn-sm" onclick="openAddAchievementModal()">
+          <i class="fa-solid fa-plus"></i> Add Achievement
+        </button>
+      </div>
+
+      <!-- Dynamic Achievements List -->
+      <div class="achievements-list" id="achievements-list-container">
+        <!-- Populated dynamically via data.js and main.js -->
+      </div>
+    </section>
+
+    <!-- Next Page CTA -->
+    <section class="section" style="padding-top: 4rem;">
+      <div class="container" style="text-align: center;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 3rem 2rem; max-width: 780px; margin: 0 auto; box-shadow: var(--shadow-md);">
+          <span class="badge badge-accent" style="margin-bottom: 1rem;"><i class="fa-solid fa-handshake"></i> Let's Collaborate</span>
+          <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.75rem;">Interested in these civil & AI projects?</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1rem; max-width: 580px; margin-left: auto; margin-right: auto;">
+            I am always eager to discuss sustainable urban drainage designs, structural simulation workflows, or innovative AI applications in construction.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">
+              <i class="fa-solid fa-envelope"></i> Contact Bharti Directly
+            </a>
+            <a href="skills.html" class="btn btn-outline">
+              <i class="fa-solid fa-graduation-cap"></i> Review Skills & Background
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-badge">BC</div>
+            <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          </div>
+          <p>Civil Engineering student at JECRC University, Jaipur. Building sustainable urban drainage systems, structural analyses, and AI estimation prototypes.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Portfolio Navigation</h5>
+          <ul class="footer-nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home / About</a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-angle-right"></i> Education & Skills</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Projects & Achievements</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Details</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Contact & Social</h5>
+          <ul class="footer-nav-links">
+            <li><a href="mailto:bhartichopra@example.com" data-bind-href="profile.email"><i class="fa-solid fa-envelope"></i> bhartichopra@example.com</a></li>
+            <li><a href="tel:+91-XXXXXXXXXX" data-bind-href="profile.phone"><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</a></li>
+            <li><a href="https://linkedin.com/in/bhartichopra" target="_blank" rel="noopener noreferrer" data-bind-href="profile.linkedin"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/bhartichopra</a></li>
+            <li><span style="color: var(--text-muted);"><i class="fa-solid fa-map-pin"></i> Jaipur, Rajasthan</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bharti Chopra. All rights reserved.</div>
+        <div>Designed with clean responsive code • Fully customizable theme</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

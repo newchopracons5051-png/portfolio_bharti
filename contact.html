@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Bharti Chopra: Phone +91-XXXXXXXXXX, Email bhartichopra@example.com, LinkedIn linkedin.com/in/bhartichopra. Reach out for civil engineering, internships, and collaborations.">
+  <title>Contact | Bharti Chopra</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Bharti Chopra Portfolio Home">
+        <div class="brand-badge">BC</div>
+        <div>
+          <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          <span class="brand-text-sub">Civil Engineering • JECRC</span>
+        </div>
+      </a>
+
+      <!-- 4-Page Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home / About</a></li>
+          <li><a href="skills.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education & Skills</a></li>
+          <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects & Achievements</a></li>
+          <li><a href="contact.html" class="nav-link active"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <button class="quick-theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon"><i class="fa-solid fa-sun"></i></span>
+        </button>
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content: Contact & Inquiries -->
+  <main id="main-content">
+
+    <!-- Page Header Banner -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header-badge">
+          <span class="badge badge-accent"><i class="fa-solid fa-comments"></i> Let's Connect</span>
+        </div>
+        <h1 class="page-title">Get in Touch</h1>
+        <p class="page-subtitle">
+          Have an inquiry, an internship opportunity, or wish to collaborate on sustainable civil engineering or AI projects? Reach out directly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Details & Form Section -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Left Column: Direct Contact Info Cards (Editable) -->
+          <div class="contact-info-panel">
+            <div>
+              <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 0.35rem;"><i class="fa-solid fa-address-book text-primary"></i> Direct Details</h2>
+              <p style="color: var(--text-secondary); font-size: 0.92rem;">Feel free to connect via phone, email, or professional social channels.</p>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card-box">
+              <div class="contact-icon-circle"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-detail-text">
+                <h5>Phone Number</h5>
+                <a href="tel:+91-XXXXXXXXXX" data-bind-href="profile.phone" data-editable="profile.phone" data-bind="profile.phone">+91-XXXXXXXXXX</a>
+              </div>
+              <button class="copy-contact-btn" onclick="copyToClipboard(document.querySelector('[data-bind=\'profile.phone\']').innerText, 'Phone Number')" title="Copy Phone Number">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- Email Card -->
+            <div class="contact-card-box">
+              <div class="contact-icon-circle"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-detail-text">
+                <h5>Email Address</h5>
+                <a href="mailto:bhartichopra@example.com" data-bind-href="profile.email" data-editable="profile.email" data-bind="profile.email">bhartichopra@example.com</a>
+              </div>
+              <button class="copy-contact-btn" onclick="copyToClipboard(document.querySelector('[data-bind=\'profile.email\']').innerText, 'Email Address')" title="Copy Email">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <div class="contact-card-box">
+              <div class="contact-icon-circle"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-detail-text">
+                <h5>LinkedIn Profile</h5>
+                <a href="https://linkedin.com/in/bhartichopra" target="_blank" rel="noopener noreferrer" data-bind-href="profile.linkedin" data-editable="profile.linkedin" data-bind="profile.linkedin">linkedin.com/in/bhartichopra</a>
+              </div>
+              <a href="https://linkedin.com/in/bhartichopra" target="_blank" rel="noopener noreferrer" class="copy-contact-btn" data-bind-href="profile.linkedin" title="Open LinkedIn Profile">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+              </a>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card-box">
+              <div class="contact-icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-detail-text">
+                <h5>City & Location</h5>
+                <span data-editable="profile.location" data-bind="profile.location">Jaipur, Rajasthan, India</span>
+              </div>
+              <span class="badge" style="margin-left: auto;">Jaipur Roots</span>
+            </div>
+
+            <!-- Availability Note -->
+            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: var(--radius); padding: 1.25rem; display: flex; align-items: flex-start; gap: 0.85rem;">
+              <span class="status-dot" style="margin-top: 6px;"></span>
+              <div>
+                <strong style="color: #10b981; font-size: 0.92rem; display: block; margin-bottom: 0.2rem;">Current Status: Available</strong>
+                <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.5;">
+                  Actively open to undergraduate civil engineering internships, research fellowships, collaborative projects, and tech opportunities.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Simple Contact Form (Name, Email, Message) -->
+          <div class="contact-form-card">
+            <div style="margin-bottom: 1.5rem;">
+              <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 0.35rem;"><i class="fa-solid fa-paper-plane text-primary"></i> Send a Message</h2>
+              <p style="color: var(--text-secondary); font-size: 0.92rem;">Fill out this form and I will respond to your email as soon as possible.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name *</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="e.g. rahul@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Inquiry Subject</label>
+                <select id="contact-subject" class="form-select">
+                  <option value="Internship / Job Opportunity">Internship / Job Opportunity</option>
+                  <option value="Project Collaboration">Project Collaboration</option>
+                  <option value="Civil Engineering Inquiry">Civil Engineering Inquiry</option>
+                  <option value="Vibe Coding / Tech Discussion">Vibe Coding / Tech Discussion</option>
+                  <option value="General Message">General Message</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Write your message, project idea, or inquiry here..." required></textarea>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-badge">BC</div>
+            <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          </div>
+          <p>Civil Engineering student at JECRC University, Jaipur. Let's collaborate on sustainable urban drainage, structural models, and innovative AI tools.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Portfolio Navigation</h5>
+          <ul class="footer-nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home / About</a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-angle-right"></i> Education & Skills</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Projects & Achievements</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Details</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Contact & Social</h5>
+          <ul class="footer-nav-links">
+            <li><a href="mailto:bhartichopra@example.com" data-bind-href="profile.email"><i class="fa-solid fa-envelope"></i> bhartichopra@example.com</a></li>
+            <li><a href="tel:+91-XXXXXXXXXX" data-bind-href="profile.phone"><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</a></li>
+            <li><a href="https://linkedin.com/in/bhartichopra" target="_blank" rel="noopener noreferrer" data-bind-href="profile.linkedin"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/bhartichopra</a></li>
+            <li><span style="color: var(--text-muted);"><i class="fa-solid fa-map-pin"></i> Jaipur, Rajasthan</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bharti Chopra. All rights reserved.</div>
+        <div>Designed with clean responsive code • Fully customizable theme</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

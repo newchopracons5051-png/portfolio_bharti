@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bharti Chopra - Student of Civil Engineering from Jaipur, JECRC University. Portfolio showcasing sustainable engineering, vibe coding, AI, and creative projects.">
+  <title>Bharti Chopra | Student of Civil Engineering</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Bharti Chopra Portfolio Home">
+        <div class="brand-badge">BC</div>
+        <div>
+          <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          <span class="brand-text-sub">Civil Engineering • JECRC</span>
+        </div>
+      </a>
+
+      <!-- 4-Page Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home / About</a></li>
+          <li><a href="skills.html" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education & Skills</a></li>
+          <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects & Achievements</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <button class="quick-theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon"><i class="fa-solid fa-sun"></i></span>
+        </button>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="display: none; @media(min-width:640px){display:inline-flex;}">
+          <span>Let's Connect</span>
+        </a>
+        <button class="mobile-toggle-btn" aria-label="Open mobile navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content: Home / About -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="badge"><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan</span>
+            <span class="badge badge-accent"><i class="fa-solid fa-graduation-cap"></i> JECRC University</span>
+            <span class="badge"><i class="fa-solid fa-bolt"></i> Vibe Coding & AI</span>
+          </div>
+
+          <h1 class="hero-title" data-editable="profile.name" data-bind="profile.name">Bharti Chopra</h1>
+          
+          <div class="hero-subtitle">
+            <i class="fa-solid fa-compass-drafting text-primary"></i>
+            <span data-editable="profile.title" data-bind="profile.title">Student of Civil Engineering</span>
+          </div>
+
+          <p class="hero-description" data-editable="profile.bio" data-bind="profile.bio">
+            I am from Jaipur city and did my schooling from NK Public School. Currently pursuing Civil Engineering at JECRC University. Passionate about blending traditional civil engineering—such as sustainable urban drainage and structural design—with modern vibe coding, AI workflows, and creative media editing.
+          </p>
+
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">
+              <i class="fa-solid fa-briefcase"></i> View Projects
+            </a>
+            <a href="skills.html" class="btn btn-outline">
+              <i class="fa-solid fa-sliders"></i> Explore Skills
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Get in Touch
+            </a>
+          </div>
+
+          <div class="hero-social-strip">
+            <a href="https://linkedin.com/in/bhartichopra" target="_blank" rel="noopener noreferrer" class="social-link-pill" data-bind-href="profile.linkedin">
+              <i class="fa-brands fa-linkedin text-primary"></i> <span>LinkedIn</span>
+            </a>
+            <a href="mailto:bhartichopra@example.com" class="social-link-pill" data-bind-href="profile.email">
+              <i class="fa-solid fa-envelope text-primary"></i> <span data-bind="profile.email">bhartichopra@example.com</span>
+            </a>
+            <a href="tel:+91-XXXXXXXXXX" class="social-link-pill" data-bind-href="profile.phone">
+              <i class="fa-solid fa-phone text-primary"></i> <span data-bind="profile.phone">+91-XXXXXXXXXX</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Spotlight Card -->
+        <div class="hero-visual">
+          <div class="profile-spotlight-card">
+            <div class="profile-card-header">
+              <div class="avatar-wrapper">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Bharti Chopra" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80'">
+              </div>
+              <div class="profile-meta">
+                <h4 data-bind="profile.name">Bharti Chopra</h4>
+                <p data-bind="profile.title">Student of Civil Engineering</p>
+                <div class="status-pill" style="margin-top: 0.4rem;">
+                  <span class="status-dot"></span>
+                  <span>Active Student & Innovator</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-facts-list">
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-school"></i></div>
+                <div>
+                  <strong>NK Public School, Jaipur</strong>
+                  <span>Schooling & Higher Secondary Foundation</span>
+                </div>
+              </div>
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div>
+                  <strong>JECRC University, Jaipur</strong>
+                  <span>Civil Engineering (B.Tech)</span>
+                </div>
+              </div>
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-city"></i></div>
+                <div>
+                  <strong>Jaipur, Rajasthan, India</strong>
+                  <span>Hometown & Cultural Roots</span>
+                </div>
+              </div>
+              <div class="fact-item">
+                <div class="fact-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div>
+                  <strong>Vibe Coding & AI Generalist</strong>
+                  <span>Next-Gen Engineering Toolset</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.5rem; justify-content: flex-end;">
+              <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">
+                <i class="fa-solid fa-comments"></i> Send Direct Message
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Banner -->
+    <section class="container">
+      <div class="stats-banner">
+        <div class="stat-item">
+          <span class="stat-number">JECRC</span>
+          <span class="stat-label">Civil Engineering Degree</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Jaipur</span>
+          <span class="stat-label">NK Public School Alumni</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Engineering Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">1st</span>
+          <span class="stat-label">Tech Fest Prize Winner</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me In-Depth Section -->
+    <section class="section">
+      <div class="container">
+        <div class="page-header" style="padding-top: 0;">
+          <div class="page-header-badge">
+            <span class="badge badge-accent"><i class="fa-solid fa-user"></i> About Bharti</span>
+          </div>
+          <h2 class="page-title">Bridging Civil Foundations With Tech</h2>
+          <p class="page-subtitle">A multidisciplinary journey that unites infrastructure engineering with artificial intelligence and digital media.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+          <!-- Card 1 -->
+          <div class="education-card" style="display: flex; flex-direction: column;">
+            <div class="edu-icon-box" style="margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-mountain-sun"></i>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Roots in Jaipur City</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Born and raised in the historic Pink City of Jaipur, I completed my schooling from <strong>NK Public School</strong>. Experiencing Jaipur's unique architectural heritage and expanding urban development sparked my early curiosity for civil planning, water management, and sustainable civic design.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="education-card" style="display: flex; flex-direction: column;">
+            <div class="edu-icon-box" style="margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-bridge-water"></i>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Civil Engineering Focus</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Currently studying Civil Engineering at <strong>JECRC University</strong>. My core academic pursuits center on structural load mechanics, sustainable urban drainage systems, green building materials (geopolymer concrete), and smart city simulations.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="education-card" style="display: flex; flex-direction: column;">
+            <div class="edu-icon-box" style="margin-bottom: 0.5rem;">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Vibe Coding & Creative Media</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+              Beyond conventional engineering textbooks, I actively leverage <strong>vibe coding</strong> and <strong>AI generalist tooling</strong> to prototype software solutions like automated construction cost estimators. Paired with video & photo editing skills, I bring technical ideas to life compellingly.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="skills.html" class="btn btn-primary" style="margin-right: 0.75rem;">
+            <span>Explore Education & Skills</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="projects.html" class="btn btn-outline">
+            <span>Browse Projects & Achievements</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-badge">BC</div>
+            <span class="brand-text-name" data-bind="profile.name">Bharti Chopra</span>
+          </div>
+          <p>Student of Civil Engineering at JECRC University, Jaipur. Exploring smart urban drainage, structural analysis, AI workflows, and vibe coding.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Portfolio Navigation</h5>
+          <ul class="footer-nav-links">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home / About</a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-angle-right"></i> Education & Skills</a></li>
+            <li><a href="projects.html"><i class="fa-solid fa-angle-right"></i> Projects & Achievements</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Details</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Contact & Social</h5>
+          <ul class="footer-nav-links">
+            <li><a href="mailto:bhartichopra@example.com" data-bind-href="profile.email"><i class="fa-solid fa-envelope"></i> bhartichopra@example.com</a></li>
+            <li><a href="tel:+91-XXXXXXXXXX" data-bind-href="profile.phone"><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</a></li>
+            <li><a href="https://linkedin.com/in/bhartichopra" target="_blank" rel="noopener noreferrer" data-bind-href="profile.linkedin"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/bhartichopra</a></li>
+            <li><span style="color: var(--text-muted);"><i class="fa-solid fa-map-pin"></i> Jaipur, Rajasthan</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bharti Chopra. All rights reserved.</div>
+        <div>Designed with clean responsive code • Fully customizable theme</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
